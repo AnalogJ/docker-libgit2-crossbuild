@@ -4,7 +4,7 @@ set -e
 
 # Set temp environment vars
 export REPO=https://github.com/openssl/openssl.git
-export BRANCH=OpenSSL_1_0_2h
+export BRANCH=OpenSSL_1_0_2-stable
 export BUILD_PATH=/tmp/openssl
 
 # Compile & Install openssl (v0.24)
