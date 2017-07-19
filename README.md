@@ -3,12 +3,7 @@ This repo contains base images for libgit2 which is staticly cross compiled with
 
 ## static libraries 
 
-- libcrypto.a - `/usr/local/bin/openssl/lib/libcrypto.a`
-- libssl.a - `/usr/local/bin/openssl/lib/libssl.a`
-- libssh2.a - `/usr/local/bin/libssh2/lib/libssh2.a`
-- libgit2.a - `/usr/local/bin/libgit2/lib/libgit2.a`
-
-
-
-
-
+- libcrypto.a - `/usr/local/lib/openssl/lib/libcrypto.a`
+- libssl.a - `/usr/local/lib/openssl/lib/libssl.a`
+- libssh2.a - `/usr/local/lib/libssh2/lib/libssh2.a`
+- libgit2.a - `/usr/local/lib/libgit2/lib/libgit2.a`
