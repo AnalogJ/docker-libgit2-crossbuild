@@ -1,4 +1,4 @@
-FROM multiarch/crossbuild
+FROM analogj/crossbuild
 
 RUN apt-get update \
  && apt-get install -q -y pkg-config

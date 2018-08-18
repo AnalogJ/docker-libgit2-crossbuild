@@ -1,4 +1,4 @@
-FROM multiarch/crossbuild
+FROM analogj/crossbuild
 
 ENV CROSS_TRIPLE=x86_64-apple-darwin
 COPY scripts /scripts
