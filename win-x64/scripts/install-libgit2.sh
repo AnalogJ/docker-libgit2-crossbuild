@@ -13,7 +13,7 @@ export LIBSSH2_FOUND=true
 export LIBSSH2_INCLUDE_DIRS=/tmp/libssh2/install/include
 export LIBSSH2_LIBRARY_DIRS=/tmp/libssh/install/lib64
 
-# Compile & Install libgit2 (v0.23)
+# Compile & Install libgit2
 git clone -b ${LIBGIT2BRANCH} --depth 1 -- ${LIBGIT2REPO} ${LIBGIT2PATH}
 
 mkdir -p ${LIBGIT2PATH}/build

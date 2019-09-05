@@ -4,7 +4,7 @@ RUN apt-get update \
  && apt-get install -q -y pkg-config
 
 # Install GOLANG
-ENV GO_VERSION 1.8.3
+ENV GO_VERSION 1.10.8
 RUN curl -fsSL "https://storage.googleapis.com/golang/go${GO_VERSION}.linux-amd64.tar.gz" \
 	| tar -xzC /usr/local
 
