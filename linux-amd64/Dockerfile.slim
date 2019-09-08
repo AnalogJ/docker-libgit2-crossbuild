@@ -23,10 +23,10 @@ RUN /scripts/configure.sh
 
 FROM debian:jessie-slim as slim
 
-RUN mkdir -p /usr/local/lib/libgit2/lib \
-    && mkdir -p /usr/local/lib/openssl/lib \
-    && mkdir -p /usr/local/lib/libssh2/lib
+RUN mkdir -p /usr/local/lib/libgit2 \
+    && mkdir -p /usr/local/lib/openssl \
+    && mkdir -p /usr/local/lib/libssh2
 
-COPY --from=base /usr/local/lib/libgit2/lib/ /usr/local/lib/libgit2/lib/
-COPY --from=base /usr/local/lib/openssl/lib/ /usr/local/lib/openssl/lib/
-COPY --from=base /usr/local/lib/libssh2/lib/ /usr/local/lib/libssh2/lib/
+COPY --from=base /usr/local/lib/libgit2/ /usr/local/lib/libgit2/
+COPY --from=base /usr/local/lib/openssl/ /usr/local/lib/openssl/
+COPY --from=base /usr/local/lib/libssh2/ /usr/local/lib/libssh2/
