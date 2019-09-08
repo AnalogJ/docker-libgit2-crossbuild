@@ -21,7 +21,7 @@ ENV PKG_CONFIG_PATH="/usr/lib/pkgconfig/:/usr/local/lib/pkgconfig/:/usr/local/li
 RUN /scripts/configure.sh
 
 
-FROM debian:jessie-slim as slim
+FROM debian:stretch-slim as slim
 
 RUN mkdir -p /usr/local/lib/libgit2 \
     && mkdir -p /usr/local/lib/openssl \
